@@ -84,10 +84,16 @@ class Budget:
       print()
       if user_input == 1:
           print('Food balance: ' + str(self.category_funds['food']))
+          print()
+          self.welcome()
       elif user_input == 2:
           print('Clothing balace: ' + str(self.category_funds['clothing']))
+          print()
+          self.welcome()
       elif user_input == 3:
           print('Entertainment balance: ' + str(self.category_funds['entertainment']))
+          print()
+          self.welcome()
 
   def transfers(self):
       user_input_debit = int(input('Transfer from. 1: Food 2: Clothing 3: Entertainment '))
